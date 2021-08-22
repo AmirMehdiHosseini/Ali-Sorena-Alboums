@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+class Ui_Panel(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(466, 251)
@@ -37,7 +37,7 @@ class Ui_MainWindow(object):
 "color:#f05053;")
         self.label.setObjectName("label")
         self.pushButton_exit = QtWidgets.QPushButton(self.frame)
-        self.pushButton_exit.setGeometry(QtCore.QRect(390, 50, 18, 18))
+        self.pushButton_exit.setGeometry(QtCore.QRect(390, 61, 18, 18))
         self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_exit.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 212, 82);\n"
@@ -65,7 +65,7 @@ class Ui_MainWindow(object):
         self.pushButton_max.setText("")
         self.pushButton_max.setObjectName("pushButton_max")
         self.pushButton_min = QtWidgets.QPushButton(self.frame)
-        self.pushButton_min.setGeometry(QtCore.QRect(390, 150, 18, 18))
+        self.pushButton_min.setGeometry(QtCore.QRect(390, 140, 18, 18))
         self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_min.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 212, 82);\n"
@@ -79,14 +79,11 @@ class Ui_MainWindow(object):
         self.pushButton_min.setText("")
         self.pushButton_min.setObjectName("pushButton_min")
         MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.pushButton_exit.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
         self.pushButton_max.clicked.connect(MainWindow.showMaximized)
-        self.pushButton_min.clicked.connect(MainWindow.close)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -95,11 +92,3 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "AXUCK"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())
