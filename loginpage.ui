@@ -6,208 +6,151 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>489</width>
-    <height>566</height>
+    <width>463</width>
+    <height>651</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Login</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>451</width>
-      <height>541</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #f05053,stop:0.5 #ffd452, stop:1 #f05053);
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #f05053,stop:0.5 #ffd452, stop:1 #f05053);
 
 border-radius:15px;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QLabel" name="label_username">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>361</y>
-       <width>111</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Dosis ExtraBold</family>
-       <pointsize>15</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color:rgb(255, 212, 82);
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_password">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>410</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(240, 80, 83);
+color:rgb(255, 212, 82);
+border-radius :10px;
+</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_username">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>364</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(240, 80, 83);
+color:rgb(255, 212, 82);
+border-radius :10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>146</x>
+         <y>36</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis ExtraBold</family>
+         <pointsize>25</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(240, 80, 83);
 background-color: none;
 </string>
-     </property>
-     <property name="text">
-      <string>username :</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_password">
-     <property name="geometry">
-      <rect>
-       <x>157</x>
-       <y>410</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Dosis ExtraBold</family>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:rgb(240, 80, 83);
-color:rgb(255, 212, 82)
-</string>
-     </property>
-     <property name="echoMode">
-      <enum>QLineEdit::Password</enum>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_password">
-     <property name="geometry">
-      <rect>
-       <x>32</x>
-       <y>407</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Dosis ExtraBold</family>
-       <pointsize>15</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color:rgb(255, 212, 82);
+       </property>
+       <property name="text">
+        <string>Welcome to </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>142</x>
+         <y>84</y>
+         <width>201</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Old English Text MT</family>
+         <pointsize>33</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(240, 80, 83);
 background-color: none;
 </string>
-     </property>
-     <property name="text">
-      <string>password :</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_username">
-     <property name="geometry">
-      <rect>
-       <x>157</x>
-       <y>364</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Dosis ExtraBold</family>
-       <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:rgb(240, 80, 83);
-color:rgb(255, 212, 82)
-</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>36</y>
-       <width>171</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Dosis ExtraBold</family>
-       <pointsize>25</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color:rgb(240, 80, 83);
-background-color: none;
-</string>
-     </property>
-     <property name="text">
-      <string>Welcome to </string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>145</x>
-       <y>84</y>
-       <width>201</width>
-       <height>61</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Old English Text MT</family>
-       <pointsize>33</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color:rgb(240, 80, 83);
-background-color: none;
-</string>
-     </property>
-     <property name="text">
-      <string>AXUCK</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_login">
-     <property name="geometry">
-      <rect>
-       <x>190</x>
-       <y>466</y>
-       <width>101</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Dosis ExtraBold</family>
-       <pointsize>15</pointsize>
-      </font>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+       </property>
+       <property name="text">
+        <string>AXUCK</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_login">
+       <property name="geometry">
+        <rect>
+         <x>154</x>
+         <y>488</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
 color:rgb(255, 212, 82);
 background-color:#f05053;
 }
@@ -216,25 +159,25 @@ color:#f05053;
 background-color:rgb(255, 212, 82);
 }
 </string>
-     </property>
-     <property name="text">
-      <string>Login</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_min">
-     <property name="geometry">
-      <rect>
-       <x>403</x>
-       <y>113</y>
-       <width>18</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_min">
+       <property name="geometry">
+        <rect>
+         <x>387</x>
+         <y>114</y>
+         <width>18</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
 background-color: rgb(255, 212, 82);
 border-radius:8px;
 }
@@ -243,25 +186,25 @@ background-color:#f05053;
 border-radius:8px;
 }
 </string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_exit">
-     <property name="geometry">
-      <rect>
-       <x>403</x>
-       <y>52</y>
-       <width>18</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_exit">
+       <property name="geometry">
+        <rect>
+         <x>387</x>
+         <y>52</y>
+         <width>18</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
 background-color: rgb(255, 212, 82);
 border-radius:8px;
 }
@@ -270,25 +213,25 @@ background-color:#f05053;
 border-radius:8px;
 }
 </string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_max">
-     <property name="geometry">
-      <rect>
-       <x>403</x>
-       <y>83</y>
-       <width>18</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="cursor">
-      <cursorShape>PointingHandCursor</cursorShape>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_max">
+       <property name="geometry">
+        <rect>
+         <x>387</x>
+         <y>83</y>
+         <width>18</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
 background-color: rgb(255, 212, 82);
 border-radius:8px;
 }
@@ -297,31 +240,68 @@ background-color:#f05053;
 border-radius:8px;
 }
 </string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_lock">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>150</y>
-       <width>181</width>
-       <height>191</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color:none;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>../../../../../Downloads/loginpic.png</pixmap>
-     </property>
-    </widget>
-   </widget>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_lock">
+       <property name="geometry">
+        <rect>
+         <x>122</x>
+         <y>150</y>
+         <width>181</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:none;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../../../Downloads/loginpic.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Register">
+       <property name="geometry">
+        <rect>
+         <x>154</x>
+         <y>540</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Open Sans</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color:rgb(255, 212, 82);
+background-color:#f05053;
+}
+QPushButton:hover{
+color:#f05053;
+background-color:rgb(255, 212, 82);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Register</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

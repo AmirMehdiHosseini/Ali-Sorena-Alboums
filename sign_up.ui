@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>483</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>461</width>
+         <height>633</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ffd452,stop:0.5 #f05053 , stop:1 #ffd452 );
+
+border-radius:15px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLineEdit" name="lineEdit_password_signup">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>410</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 212, 82);
+color:rgb(240, 80, 83);
+border-radius :10px;
+</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_username_signup">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>364</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 212, 82);
+color:rgb(240, 80, 83);
+border-radius :10px;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_1">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>150</y>
+          <width>381</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Dosis ExtraBold</family>
+          <pointsize>25</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffd452 ;
+background-color: none;
+</string>
+        </property>
+        <property name="text">
+         <string>However, it's not as easy </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_axuck">
+        <property name="geometry">
+         <rect>
+          <x>146</x>
+          <y>60</y>
+          <width>201</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Old English Text MT</family>
+          <pointsize>33</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:#ffd452 ;
+background-color: none;
+</string>
+        </property>
+        <property name="text">
+         <string>AXUCK</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_login">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>530</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color:#f05053;
+background-color:rgb(255, 212, 82);
+}
+QPushButton:hover{
+color:rgb(255, 212, 82);
+background-color:#f05053;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Sign up</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_min_signup">
+        <property name="geometry">
+         <rect>
+          <x>387</x>
+          <y>90</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:8px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:8px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_exit_signup">
+        <property name="geometry">
+         <rect>
+          <x>387</x>
+          <y>56</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:8px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:8px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_back_signup">
+        <property name="geometry">
+         <rect>
+          <x>387</x>
+          <y>124</y>
+          <width>18</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:8px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:8px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>53</x>
+          <y>208</y>
+          <width>381</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Dosis ExtraBold</family>
+          <pointsize>25</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffd452 ;
+background-color: none;
+</string>
+        </property>
+        <property name="text">
+         <string> to cancel your account as</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>86</x>
+          <y>266</y>
+          <width>381</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Dosis ExtraBold</family>
+          <pointsize>25</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffd452 ;
+background-color: none;
+</string>
+        </property>
+        <property name="text">
+         <string>it was to sign up for it.</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_password_signup_2">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>457</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(255, 212, 82);
+color:rgb(240, 80, 83);
+border-radius :10px;
+</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_exit_signup</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_min_signup</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

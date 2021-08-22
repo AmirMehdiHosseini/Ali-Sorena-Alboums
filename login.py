@@ -14,69 +14,48 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(489, 566)
+        MainWindow.resize(463, 651)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout.setObjectName("horizontalLayout")
         self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(20, 10, 451, 541))
         self.frame.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #f05053,stop:0.5 #ffd452, stop:1 #f05053);\n"
 "\n"
 "border-radius:15px;")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.label_username = QtWidgets.QLabel(self.frame)
-        self.label_username.setGeometry(QtCore.QRect(30, 361, 111, 31))
-        font = QtGui.QFont()
-        font.setFamily("Dosis ExtraBold")
-        font.setPointSize(15)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_username.setFont(font)
-        self.label_username.setStyleSheet("color:rgb(255, 212, 82);\n"
-"background-color: none;\n"
-"")
-        self.label_username.setObjectName("label_username")
         self.lineEdit_password = QtWidgets.QLineEdit(self.frame)
-        self.lineEdit_password.setGeometry(QtCore.QRect(157, 410, 201, 31))
+        self.lineEdit_password.setGeometry(QtCore.QRect(95, 410, 261, 31))
         font = QtGui.QFont()
-        font.setFamily("Dosis ExtraBold")
+        font.setFamily("Open Sans")
         font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
         self.lineEdit_password.setFont(font)
         self.lineEdit_password.setStyleSheet("background-color:rgb(240, 80, 83);\n"
-"color:rgb(255, 212, 82)\n"
+"color:rgb(255, 212, 82);\n"
+"border-radius :10px;\n"
 "")
         self.lineEdit_password.setEchoMode(QtWidgets.QLineEdit.Password)
         self.lineEdit_password.setObjectName("lineEdit_password")
-        self.label_password = QtWidgets.QLabel(self.frame)
-        self.label_password.setGeometry(QtCore.QRect(32, 407, 91, 31))
-        font = QtGui.QFont()
-        font.setFamily("Dosis ExtraBold")
-        font.setPointSize(15)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_password.setFont(font)
-        self.label_password.setStyleSheet("color:rgb(255, 212, 82);\n"
-"background-color: none;\n"
-"")
-        self.label_password.setObjectName("label_password")
         self.lineEdit_username = QtWidgets.QLineEdit(self.frame)
-        self.lineEdit_username.setGeometry(QtCore.QRect(157, 364, 201, 31))
+        self.lineEdit_username.setGeometry(QtCore.QRect(95, 364, 261, 31))
         font = QtGui.QFont()
-        font.setFamily("Dosis ExtraBold")
+        font.setFamily("Open Sans")
         font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setBold(False)
+        font.setWeight(50)
+        
         self.lineEdit_username.setFont(font)
         self.lineEdit_username.setStyleSheet("background-color:rgb(240, 80, 83);\n"
-"color:rgb(255, 212, 82)\n"
-"")
+"color:rgb(255, 212, 82);\n"
+"border-radius :10px;")
         self.lineEdit_username.setText("")
         self.lineEdit_username.setObjectName("lineEdit_username")
         self.label_4 = QtWidgets.QLabel(self.frame)
-        self.label_4.setGeometry(QtCore.QRect(150, 36, 171, 51))
+        self.label_4.setGeometry(QtCore.QRect(146, 36, 171, 51))
         font = QtGui.QFont()
         font.setFamily("Dosis ExtraBold")
         font.setPointSize(25)
@@ -88,7 +67,7 @@ class Ui_MainWindow(object):
 "")
         self.label_4.setObjectName("label_4")
         self.label_5 = QtWidgets.QLabel(self.frame)
-        self.label_5.setGeometry(QtCore.QRect(145, 84, 201, 61))
+        self.label_5.setGeometry(QtCore.QRect(142, 84, 201, 61))
         font = QtGui.QFont()
         font.setFamily("Old English Text MT")
         font.setPointSize(33)
@@ -98,9 +77,9 @@ class Ui_MainWindow(object):
 "")
         self.label_5.setObjectName("label_5")
         self.pushButton_login = QtWidgets.QPushButton(self.frame)
-        self.pushButton_login.setGeometry(QtCore.QRect(190, 466, 101, 41))
+        self.pushButton_login.setGeometry(QtCore.QRect(154, 488, 141, 41))
         font = QtGui.QFont()
-        font.setFamily("Dosis ExtraBold")
+        font.setFamily("Open Sans")
         font.setPointSize(15)
         self.pushButton_login.setFont(font)
         self.pushButton_login.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -115,7 +94,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_login.setObjectName("pushButton_login")
         self.pushButton_min = QtWidgets.QPushButton(self.frame)
-        self.pushButton_min.setGeometry(QtCore.QRect(403, 113, 18, 18))
+        self.pushButton_min.setGeometry(QtCore.QRect(387, 114, 18, 18))
         self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_min.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 212, 82);\n"
@@ -129,7 +108,7 @@ class Ui_MainWindow(object):
         self.pushButton_min.setText("")
         self.pushButton_min.setObjectName("pushButton_min")
         self.pushButton_exit = QtWidgets.QPushButton(self.frame)
-        self.pushButton_exit.setGeometry(QtCore.QRect(403, 52, 18, 18))
+        self.pushButton_exit.setGeometry(QtCore.QRect(387, 52, 18, 18))
         self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_exit.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 212, 82);\n"
@@ -143,7 +122,7 @@ class Ui_MainWindow(object):
         self.pushButton_exit.setText("")
         self.pushButton_exit.setObjectName("pushButton_exit")
         self.pushButton_max = QtWidgets.QPushButton(self.frame)
-        self.pushButton_max.setGeometry(QtCore.QRect(403, 83, 18, 18))
+        self.pushButton_max.setGeometry(QtCore.QRect(387, 83, 18, 18))
         self.pushButton_max.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_max.setStyleSheet("QPushButton{\n"
 "background-color: rgb(255, 212, 82);\n"
@@ -157,11 +136,31 @@ class Ui_MainWindow(object):
         self.pushButton_max.setText("")
         self.pushButton_max.setObjectName("pushButton_max")
         self.label_lock = QtWidgets.QLabel(self.frame)
-        self.label_lock.setGeometry(QtCore.QRect(130, 150, 181, 191))
+        self.label_lock.setGeometry(QtCore.QRect(122, 150, 181, 191))
         self.label_lock.setStyleSheet("background-color:none;")
         self.label_lock.setText("")
         self.label_lock.setPixmap(QtGui.QPixmap("C:/Users/Lenovo_ws/Downloads/loginpic.png"))
         self.label_lock.setObjectName("label_lock")
+        self.pushButton_Register = QtWidgets.QPushButton(self.frame)
+        self.pushButton_Register.setGeometry(QtCore.QRect(154, 540, 141, 41))
+        font = QtGui.QFont()
+        font.setFamily("Open Sans")
+        font.setPointSize(15)
+        font.setBold(False)
+        font.setWeight(50)
+        self.pushButton_Register.setFont(font)
+        self.pushButton_Register.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_Register.setStyleSheet("QPushButton{\n"
+"color:rgb(255, 212, 82);\n"
+"background-color:#f05053;\n"
+"}\n"
+"QPushButton:hover{\n"
+"color:#f05053;\n"
+"background-color:rgb(255, 212, 82);\n"
+"}\n"
+"")
+        self.pushButton_Register.setObjectName("pushButton_Register")
+        self.horizontalLayout.addWidget(self.frame)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -173,10 +172,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Login"))
-        self.label_username.setText(_translate("MainWindow", "username :"))
-        self.label_password.setText(_translate("MainWindow", "password :"))
         self.label_4.setText(_translate("MainWindow", "Welcome to "))
         self.label_5.setText(_translate("MainWindow", "AXUCK"))
         self.pushButton_login.setText(_translate("MainWindow", "Login"))
-
-
+        self.pushButton_Register.setText(_translate("MainWindow", "Register"))

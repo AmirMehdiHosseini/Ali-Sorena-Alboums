@@ -3,10 +3,53 @@ from PyQt5.QtCore    import *
 from login           import Ui_MainWindow
 from panel           import Ui_Panel
 from loading         import Ui_Main_loading
+from sign_up         import Ui_Sign_up
+from mysql.connector import connect
 
- 
+
+con = connect(user     = 'root'     ,
+              host     = 'localhost'    ,
+              database = 'info' ,
+              password = '43694369'     )
+
+
+
+
+class Main_Sign_up(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Sign_up()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.lineEdit_username_signup.setPlaceholderText  ('                      Username' )
+        self.ui.lineEdit_password_signup.setPlaceholderText  ('                      Password' )
+        self.ui.lineEdit_password_signup_2.setPlaceholderText('               Confirm password')
+        self.ui.pushButton_back_signup.clicked.connect(self.login)
+
+
+    def login(self):
+        self.login2 = Main_Login()
+        self.login2.show()
+        self.close()
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    
+
+
+
+
 Counter = 0
-
 
 class MainLoading(QMainWindow):
     def __init__(self):
@@ -20,7 +63,7 @@ class MainLoading(QMainWindow):
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.progress)
-        self.timer.start(30)
+        self.timer.start(10)
 
 
         self.show()
@@ -43,7 +86,7 @@ class MainLoading(QMainWindow):
         if Counter > 100:
             self.timer.stop()
 
-            self.Panel = RootMain()
+            self.Panel = Main_Login()
             self.Panel.show()
 
             self.close()
@@ -88,7 +131,7 @@ class Panel(QMainWindow):
         self.oldPos = evt.globalPos()
 
 
-class RootMain(QMainWindow):
+class Main_Login(QMainWindow):
     def __init__(self):
 
         QMainWindow.__init__(self)
@@ -100,7 +143,19 @@ class RootMain(QMainWindow):
 
         self.ui.pushButton_login.clicked.connect(self.LoginPanel)
 
+        self.ui.lineEdit_username.setPlaceholderText('                      Username')
+        self.ui.lineEdit_password.setPlaceholderText('                      Password')
 
+        self.ui.pushButton_Register.clicked.connect(self.register)
+
+
+    def register(self):
+        self.sign_up = Main_Sign_up()
+        self.sign_up.show()
+        self.close()
+
+
+    
     def mousePressEvent(self,evt):
         self.oldPos = evt.globalPos()
 
@@ -116,7 +171,7 @@ class RootMain(QMainWindow):
         password = self.ui.lineEdit_password.text()
 
 
-        if user == 'admin' and password == '123456':
+        if user == 'amir mehdi' and password == '12345678':
             
             self.paneluser = Panel()
             self.paneluser.show()
@@ -125,6 +180,9 @@ class RootMain(QMainWindow):
         else :
 
             print('error')
+            
+
+con.close()
 
 
 if __name__ == '__main__':
