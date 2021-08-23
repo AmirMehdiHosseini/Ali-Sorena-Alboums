@@ -1,22 +1,22 @@
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore    import *
 from login           import Ui_MainWindow
-from panel           import Ui_Panel
+from name_panel      import Ui_Panel
 from loading         import Ui_Main_loading
 from sign_up         import Ui_Sign_up
-from mysql.connector import connect
+import mysql.connector 
 
 
-con = connect(user     = 'root'     ,
-              host     = 'localhost'    ,
-              database = 'info' ,
-              password = '43694369'     )
+my_db = mysql.connector.connect(user = 'root',
+                                password = '43694369',
+                                host = '127.0.0.1',
+                                database = 'account')
 
-
-
+my_cursor = my_db.cursor()
 
 class Main_Sign_up(QMainWindow):
     def __init__(self):
+
 
         QMainWindow.__init__(self)
         self.ui = Ui_Sign_up()
@@ -27,6 +27,23 @@ class Main_Sign_up(QMainWindow):
         self.ui.lineEdit_password_signup.setPlaceholderText  ('                      Password' )
         self.ui.lineEdit_password_signup_2.setPlaceholderText('               Confirm password')
         self.ui.pushButton_back_signup.clicked.connect(self.login)
+        self.ui.pushButton_login.clicked.connect(self.sign_up)
+
+    
+    def sign_up(self):
+        password , con_pass, username = self.ui.lineEdit_password_signup_2.text() , self.ui.lineEdit_password_signup.text(), self.ui.lineEdit_username_signup.text()
+        
+
+    
+        if password == con_pass:
+            my_cursor.execute('INSERT INTO info (username, password) VALUES (\'%s\', \'%s\');' %(username, password))
+        
+        
+        my_db.commit()     
+        print('yay')
+
+        self.login()
+
 
 
     def login(self):
@@ -182,7 +199,10 @@ class Main_Login(QMainWindow):
             print('error')
             
 
-con.close()
+       
+
+
+
 
 
 if __name__ == '__main__':
@@ -190,3 +210,7 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     root = MainLoading()
     sys.exit(app.exec_())
+
+
+    
+my_db.close()
