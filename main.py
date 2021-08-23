@@ -4,6 +4,7 @@ from login           import Ui_MainWindow
 from name_panel      import Ui_Panel
 from loading         import Ui_Main_loading
 from sign_up         import Ui_Sign_up
+from artists_alboums import Ui_Alboums
 import mysql.connector 
 
 
@@ -13,6 +14,80 @@ my_db = mysql.connector.connect(user = 'root',
                                 database = 'account')
 
 my_cursor = my_db.cursor()
+
+
+
+
+
+# boro bara panel class besaz bad ino vsl kon
+'''
+class Alboums(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Alboums()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+
+'''
+
+class Artists_names(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Panel()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+
+        self.ui.pushButton_back.clicked.connect(self.login)
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    
+    def login(self):
+        self.login = Main_Login()
+        self.login.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Main_Sign_up(QMainWindow):
     def __init__(self):
@@ -40,7 +115,6 @@ class Main_Sign_up(QMainWindow):
         
         
         my_db.commit()     
-        print('yay')
 
         self.login()
 
@@ -188,21 +262,16 @@ class Main_Login(QMainWindow):
         password = self.ui.lineEdit_password.text()
 
 
-        if user == 'amir mehdi' and password == '12345678':
+        if user == 'aa' and password == '11':
             
-            self.paneluser = Panel()
+            self.paneluser = Artists_names()
             self.paneluser.show()
             self.close()
 
         else :
-
+# ye massagebox bezar bara in o sign up eshtebah
             print('error')
             
-
-       
-
-
-
 
 
 if __name__ == '__main__':
