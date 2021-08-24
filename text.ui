@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>627</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 212, 82);
+
+border-radius:15px;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>592</width>
+         <height>5018</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>5000</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>-40</x>
+             <y>-340</y>
+             <width>600</width>
+             <height>4991</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:none;
+color: #f05053;</string>
+           </property>
+           <property name="text">
+            <string>ما کلی زجر کشیدیم کلی سختی میدونی ، میدونم
+
+اما همین سختیا بودن که الان میتونیم بگیم مَردیم
+
+این خیلی خوبه
+
+ما هیپ هاپیا هممون شکل همیم
+
+واسه ما میکروفون یه دنیا عشقه
+
+میدونی پسر اما این روزگار گَنده
+
+ما باهاش میجنگیم اونقدی که تا شکستش بدیم
+
+چه روزگاری سردی لحظات گَند و غمگین
+
+پشت هم به صف شدن و حاضرن با شمشیر
+
+این قلب منو جر بدن اما ترس توو من نیست
+
+من هشت سالم بود آخرین بار ترسیدم از لنگی
+
+لاستیک دوچرخم چون ندادم ترجیح
+
+که پشت چرخ بعدی باشم اما باختم مشتی
+
+چه میشه کرد حرفی نمیشه زد وقتی
+
+باشه هر چی کَشکی باشه هر کی هر کی
+
+درویش قسم به تار موت قسم به آبروت
+
+قسم به روزایی که پر از فقر و ساده بود
+
+قسم به کَشکول و تبر زینت لای پوست
+
+قسم به عصای درمونده ی گدایِ کور
+
+توو مرامم این نبود شاد باشم دوست غمگین این نبود
+
+با این که اندازه کافی زندگیم شیرین نبود
+
+خنجرم توو جیب نبود نامردی رو خوب دیدم
+
+اما توو وجوده خستم نیست هنوز
+
+ترس حتی از هر گُنده لاتِ شاخی نیست عمو
+
+من توو کثافته جنگم ترس درگیری نموند توو قلبم
+
+قسم به تو درویش که هیچکی اهل شر نی وقتی سگ شم
+
+حتی اگه بالا بودم زور روی زیریم نبود
+
+اونقدی که مشت خوردم خون تووی بینیم نموند
+
+قسم به تو درویش که اهل دردسر نیستم اما دست تقدیر
+
+آرزومو نشنید و پام توو جاده لغزید
+
+پس حق داری بزنی توو چشایِ من زُل
+
+اما محاله که بشم توویِ راه شب گُم
+
+این خیابونا یه عمر جفت من و کفشمن
+
+من از بَرم ، شاهراها و کوچه های تَنگو
+
+زندگی هیپ هاپی بدون حد و مرز بدون ترس انتهای رنگ شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+زندگی هیپ هاپی بدون ترس بدون حد و مرز انتهای یک شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+همه ی دور بریام می گفتن نرم سُراغ شب
+
+نرم توو راه خلاف و نشم مچاله تر
+
+نشستن گفتن از هر زیر و بَم توو زندگی
+
+اما خودم پُرم بگین من از کجا بگم ها
+
+أ شب به شب بیدار نخ به نخ سیگار لب به لب لیوان
+
+الکل سر به سر میذاشت با من
+
+خط کج زیاد توو راه راست من می کاشت
+
+اما خواستم در بیام از نگاه به سختیا
+
+از بیست و یک سال حسرت ، بیست و یک سال دردم
+
+تلخی های شهرم بیست و یک سال جنگم
+
+درد پشت و خنجر ، زخم مشت توو فکم
+
+سه تا کارد رو دستم ، استرس توو مغزم
+
+أ مرگ باورام تنگ شدن جا برام
+
+قتل خواهرام برادرام ، نفرینای شاهرگام
+
+توو هر غروبی با عَزا
+
+یه درد بد توو سینه یه درد لاعلاج
+
+از نیازی که یه آدم آس و پاس به خون داشت
+
+من سرباز قُماری بودم که آس و شاه نشون داشت
+
+بی بی ام توو این قُمار داشت حکم مادرم و
+
+هیپ هاپ لعنتی شد زندگی و باورم
+
+زندگی هیپ هاپی بدون حد و مرز بدون ترس انتهای رنگ شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+زندگی هیپ هاپی بدون ترس بدون حد و مرز انتهای یک شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+همه ی بازیکنا به صف شین که شروع شده بازی
+
+محاله محاله حالا خالی بشه باطری
+
+حالا که به گوش توئم صابون من ماسید
+
+باهاش حال کردی من داغونتم داشی
+
+بیست و هفت فروردینِ شصت و نه یه جایی
+
+افتاد اتفاقی یه اتفاق خاصی
+
+مامان من زایید یه گوله ی آتیش
+
+آتیشی که از اولش رو قانونا شا*ید
+
+برگرفته از کتاب قاتلای جانی
+
+فهمید که خیابونا جای بچه ها نی
+
+اما باز دید بچه ها که پُر می کنن لاتی
+
+این به بعد چه خونایی که رو زمینا پاشید
+
+این به بعد چه پولایی که توو قمارا خوابید
+
+این به بعد می فهمی که باید حقو چاپید
+
+باید پولو پس گرفت هر چند که باشه ناچیز
+
+پسر چه حالی داره زندگی هیپ هاپی
+
+زندگی هیپ هاپی بدون حد و مرز بدون ترس انتهای رنگ شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+زندگی هیپ هاپی بدون ترس بدون حد و مرز انتهای یک شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+زندگی هیپ هاپی بدون حد و مرز بدون ترس انتهای رنگ شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+زندگی هیپ هاپی بدون ترس بدون حد و مرز انتهای یک شب
+
+زندگی هیپ هاپی ، زندگی چند تا مرد توو عمق درد اما سربلند بازم
+
+</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_exit">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>30</y>
+             <width>18</width>
+             <height>18</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:4px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:4px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_min">
+           <property name="geometry">
+            <rect>
+             <x>370</x>
+             <y>30</y>
+             <width>18</width>
+             <height>18</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:4px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:4px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_back">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>30</y>
+             <width>18</width>
+             <height>18</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:4px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:4px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_min</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>366</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>426</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

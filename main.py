@@ -1,25 +1,298 @@
-from PyQt5.QtWidgets  import *
-from PyQt5.QtCore     import *
-from login            import Ui_MainWindow
-from name_panel       import Ui_Panel
-from loading          import Ui_Main_loading
-from sign_up          import Ui_Sign_up
-from artists_alboums  import Ui_Alboums
-from marde_tanha      import Ui_Marde_Tanha
-from Aavar            import Ui_Aavar
-from Negar            import Ui_Negar
-from Kavir            import Ui_Kavir
-from Gavazn           import Ui_Gavazn
-import mysql.connector 
+from PyQt5.QtWidgets   import *
+from PyQt5.QtCore      import *
+from login             import Ui_MainWindow
+from name_panel        import Ui_Panel
+from loading           import Ui_Main_loading
+from sign_up           import Ui_Sign_up
+from artists_alboums   import Ui_Alboums
+from marde_tanha       import Ui_Marde_Tanha
+from Aavar             import Ui_Aavar
+from Negar             import Ui_Negar
+from Kavir             import Ui_Kavir
+from Gavazn            import Ui_Gavazn
+from Gharibe_nisti     import Ui_GharibeNisti
+from Beshnas           import Ui_Beshnas
+from Taghsir           import Ui_Taghsir
+from Masti             import Ui_Masti
+from mysql.connector   import connect
+from Zendegi           import Ui_Zendegi
 
 
-my_db = mysql.connector.connect(user = 'root',
-                                password = '43694369',
-                                host = '127.0.0.1',
-                                database = 'account')
+
+my_db = connect(user = 'root',
+                password = '43694369',
+                host = '127.0.0.1',
+                database = 'account')
 
 
 my_cursor = my_db.cursor()
+
+
+
+
+class Zendegi(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Zendegi()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = MardeTanha()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Masti(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Masti()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = MardeTanha()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Taghsir(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Taghsir()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = MardeTanha()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Beshnas(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Beshnas()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_max.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = MardeTanha()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class GharibeNisti(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_GharibeNisti()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_max.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = MardeTanha()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -208,6 +481,18 @@ class MardeTanha(QMainWindow):
         self.setWindowFlag(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.ui.pushButton_back.clicked.connect(self.back)
+        self.ui.pushButton_gharibe.clicked.connect(self.gharibe)
+        self.ui.pushButton_beshnas.clicked.connect(self.beshnas)
+        self.ui.pushButton_Taghsir.clicked.connect(self.taghsir)
+        self.ui.pushButton_Masti.clicked.connect(self.masti)
+        self.ui.pushButton_zendegi.clicked.connect(self.zendegi)
+        self.ui.pushButton_doel.clicked.connect(self.doel)
+        self.ui.pushButtoon_Haf.clicked.connect(self.haf)
+        self.ui.pushButton_Khake.clicked.connect(self.khake)
+        self.ui.pushButton_Vaghte.clicked.connect(self.vaghte)
+        self.ui.pushButton_bad.clicked.connect(self.bad)
+
+
 
 
     def mousePressEvent(self,evt):
@@ -223,6 +508,69 @@ class MardeTanha(QMainWindow):
     def back(self):
         self.back2 = Alboums()
         self.back2.show()
+        self.close()
+
+    def gharibe(self):
+        self.gharibe2 = GharibeNisti()
+        self.gharibe2.show()
+        self.close()
+
+
+
+    def beshnas(self):
+        self.beshnas2 = Beshnas()
+        self.beshnas2.show()
+        self.close()
+
+
+    def taghsir(self):
+        self.gharibe2 = Taghsir()
+        self.gharibe2.show()
+        self.close()
+
+
+    def masti(self):
+        self.gharibe2 = Masti()
+        self.gharibe2.show()
+        self.close()
+
+
+    def zendegi(self):
+        self.gharibe2 = Zendegi()
+        self.gharibe2.show()
+        self.close()
+
+
+    def doel(self):
+        self.gharibe2 = GharibeNisti()
+        self.gharibe2.show()
+        self.close()
+
+
+    def haf(self):
+        self.gharibe2 = GharibeNisti()
+        self.gharibe2.show()
+        self.close()
+
+
+    def khake(self):
+        self.gharibe2 = GharibeNisti()
+        self.gharibe2.show()
+        self.close()
+
+
+
+    def vaghte(self):
+        self.gharibe2 = GharibeNisti()
+        self.gharibe2.show()
+        self.close()
+
+
+
+
+    def bad(self):
+        self.gharibe2 = GharibeNisti()
+        self.gharibe2.show()
         self.close()
 
 
@@ -390,6 +738,13 @@ class Artists_names(QMainWindow):
 
 
 
+
+
+
+
+
+
+
 class Main_Sign_up(QMainWindow):
     def __init__(self):
 
@@ -437,6 +792,14 @@ class Main_Sign_up(QMainWindow):
         self.oldPos = evt.globalPos()
 
     
+
+
+
+
+
+
+
+
 
 
 
@@ -538,6 +901,10 @@ class Panel(QMainWindow):
         self.move(self.x() + delta.x() , self.y() + delta.y())
         self.oldPos = evt.globalPos()
 '''    
+
+
+
+
 
 
 
