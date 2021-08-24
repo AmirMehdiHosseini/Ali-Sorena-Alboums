@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Alboums(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(469, 657)
+        MainWindow.resize(503, 675)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)
@@ -24,7 +24,7 @@ class Ui_Alboums(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.frame_2 = QtWidgets.QFrame(self.frame)
-        self.frame_2.setGeometry(QtCore.QRect(-3, 0, 451, 641))
+        self.frame_2.setGeometry(QtCore.QRect(10, 0, 451, 641))
         self.frame_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.frame_2.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #f05053,stop:0.5 #ffd452, stop:1 #f05053);\n"
 "\n"
@@ -212,12 +212,3 @@ class Ui_Alboums(object):
         self.pushButton_gavazn.setText(_translate("MainWindow", "Gavazn"))
         self.pushButton_single.setText(_translate("MainWindow", "Single-tracks"))
 
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_Alboums()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

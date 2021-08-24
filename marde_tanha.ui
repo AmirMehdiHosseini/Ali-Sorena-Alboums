@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>586</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #ffd452,stop:0.5 #f05053, stop:1 #ffd452 );
+
+border-radius:15px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_Harkat">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Harkat</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_nakhoda">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>160</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Nakhoda-Jelal</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_daar">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>220</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Daar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_goriz">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>280</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Goriz-az-markaz</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ghalbhaye">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>400</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ghalbhaye-atashin</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_bad_pichid">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>340</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Bad-pichid</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtoon_laghzesh">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>460</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Laghzesh</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>10</y>
+         <width>321</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis ExtraBold</family>
+         <pointsize>31</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: none;
+color:#ffd452;
+</string>
+       </property>
+       <property name="text">
+        <string>Gavazn</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_exit">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>44</y>
+         <width>18</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:4px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:4px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_back">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>112</y>
+         <width>18</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:4px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:4px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_min">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>78</y>
+         <width>18</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#f05053;
+border-radius:4px;
+}
+QPushButton:hover{
+background-color: rgb(255, 212, 82);
+border-radius:4px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtoon_cut">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>460</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Cut</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_asayeshgah">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>340</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Asayeshgah</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_dashte">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>400</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Dashte-parvaneha</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_gavazn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>100</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Gavazn</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_pelikan">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>220</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Pelikan</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_istgah">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>160</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Istgah-shahr-yakh</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_na_mimiram">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>280</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Na-mimiram ...</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtoon_daroon">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>520</y>
+         <width>401</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Daroon[skit]</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_min</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

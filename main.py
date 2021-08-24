@@ -1,10 +1,15 @@
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore    import *
-from login           import Ui_MainWindow
-from name_panel      import Ui_Panel
-from loading         import Ui_Main_loading
-from sign_up         import Ui_Sign_up
-from artists_alboums import Ui_Alboums
+from PyQt5.QtWidgets  import *
+from PyQt5.QtCore     import *
+from login            import Ui_MainWindow
+from name_panel       import Ui_Panel
+from loading          import Ui_Main_loading
+from sign_up          import Ui_Sign_up
+from artists_alboums  import Ui_Alboums
+from marde_tanha      import Ui_Marde_Tanha
+from Aavar            import Ui_Aavar
+from Negar            import Ui_Negar
+from Kavir            import Ui_Kavir
+from Gavazn           import Ui_Gavazn
 import mysql.connector 
 
 
@@ -13,22 +18,20 @@ my_db = mysql.connector.connect(user = 'root',
                                 host = '127.0.0.1',
                                 database = 'account')
 
+
 my_cursor = my_db.cursor()
 
 
 
-
-
-# boro bara panel class besaz bad ino vsl kon
-'''
-class Alboums(QMainWindow):
+class Gavazn(QMainWindow):
     def __init__(self):
 
         QMainWindow.__init__(self)
-        self.ui = Ui_Alboums()
+        self.ui = Ui_Gavazn()
         self.ui.setupUi(self)
         self.setWindowFlag(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
 
 
     def mousePressEvent(self,evt):
@@ -41,7 +44,296 @@ class Alboums(QMainWindow):
         self.oldPos = evt.globalPos()
 
 
-'''
+    def back(self):
+        self.back2 = Alboums()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Kavir(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Kavir()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+
+    def back(self):
+        self.back2 = Alboums()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Negar(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Negar()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+
+    def back(self):
+        self.back2 = Alboums()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Aavar(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Aavar()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+        
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+
+    def back(self):
+        self.back2 = Alboums()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class MardeTanha(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Marde_Tanha()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+
+    def back(self):
+        self.back2 = Alboums()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Alboums(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Alboums()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+        self.ui.pushButton_mard_tanha.clicked.connect(self.marde_tanha)
+        self.ui.pushButton_avar.clicked.connect(self.aavar)
+        self.ui.pushButton_negar.clicked.connect(self.negar)
+        self.ui.pushButton_kavir.clicked.connect(self.kavir) 
+        self.ui.pushButton_gavazn.clicked.connect(self.gavazn)
+
+
+
+    def aavar(self):
+        self.aavar2 = Aavar()
+        self.aavar2.show()
+        self.close()
+
+
+    def kavir(self):
+        self.kavir2 = Kavir()
+        self.kavir2.show()
+        self.close()
+
+
+    def negar(self):
+        self.negar2 = Negar()
+        self.negar2.show()
+        self.close()
+
+
+    def gavazn(self):
+        self.gavazn2 = Gavazn()
+        self.gavazn2.show()
+        self.close()
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Artists_names()
+        self.back2.show()
+        self.close()
+
+    def marde_tanha(self):
+        self.marde_tanha2 = MardeTanha()
+        self.marde_tanha2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Artists_names(QMainWindow):
     def __init__(self):
@@ -53,6 +345,7 @@ class Artists_names(QMainWindow):
         self.setAttribute(Qt.WA_TranslucentBackground)
 
         self.ui.pushButton_back.clicked.connect(self.login)
+        self.ui.pushButton_sorena.clicked.connect(self.alboums)
 
     def mousePressEvent(self,evt):
         self.oldPos = evt.globalPos()
@@ -68,6 +361,14 @@ class Artists_names(QMainWindow):
         self.login = Main_Login()
         self.login.show()
         self.close()
+
+    def alboums(self):
+        self.alboums2 = Alboums()
+        self.alboums2.show()
+        self.close()
+        
+
+
 
 
 
@@ -140,6 +441,23 @@ class Main_Sign_up(QMainWindow):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Counter = 0
 
 class MainLoading(QMainWindow):
@@ -201,7 +519,7 @@ class MainLoading(QMainWindow):
 "}")
 
 
-
+'''
 class Panel(QMainWindow):
     def __init__(self):
 
@@ -211,7 +529,6 @@ class Panel(QMainWindow):
         self.setWindowFlag(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
 
-
     def mousePressEvent(self,evt):
         self.oldPos = evt.globalPos()
 
@@ -220,6 +537,36 @@ class Panel(QMainWindow):
         delta = QPoint(evt.globalPos() - self.oldPos)
         self.move(self.x() + delta.x() , self.y() + delta.y())
         self.oldPos = evt.globalPos()
+'''    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Main_Login(QMainWindow):
