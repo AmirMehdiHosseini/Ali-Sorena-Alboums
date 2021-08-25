@@ -82,7 +82,7 @@ class Ui_Negar(object):
 "  background-color :#f05053;\n"
 "  color:#ffd452;\n"
 "}")
-        self.pushButton_nagar.setObjectName("pushButton_nagar")
+        self.pushButton_nagar.setObjectName("pushButton_negar")
         self.pushButton_naghsh = QtWidgets.QPushButton(self.frame)
         self.pushButton_naghsh.setEnabled(True)
         self.pushButton_naghsh.setGeometry(QtCore.QRect(110, 280, 181, 41))
@@ -338,7 +338,7 @@ class Ui_Negar(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton_tavalod.setText(_translate("MainWindow", "Tavalod"))
         self.pushButton_berim.setText(_translate("MainWindow", "Berim-aghabtar"))
-        self.pushButton_nagar.setText(_translate("MainWindow", "nagar"))
+        self.pushButton_nagar.setText(_translate("MainWindow", "negar"))
         self.pushButton_naghsh.setText(_translate("MainWindow", "naghsh"))
         self.pushButton_jari.setText(_translate("MainWindow", "Jaari"))
         self.pushButton_keshti.setText(_translate("MainWindow", "Keshti"))
@@ -350,4 +350,2339 @@ class Ui_Negar(object):
         self.pushButton_toorbin.setText(_translate("MainWindow", "Toorbin"))
         self.pushButton_toofan.setText(_translate("MainWindow", "Toofan"))
         self.pushButton_marg.setText(_translate("MainWindow", "Marg"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Tavalod(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(546, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 511, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-140, -1690, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "به بوی آخرین آجرم وفادارم ، من بچه ی آوارم\n"
+"\n"
+"نادیده بگیر از من ، من کوچه هام کوچیکه\n"
+"\n"
+"اما اندازه ی دستای دنیا واست جا دارم\n"
+"\n"
+"عمرم تولدِ تلخ ترین آمیزش\n"
+"\n"
+"گهواره ـَم همخوابگیِ ستون و ریزش\n"
+"\n"
+"گرم بود بازارِ مصالح فروشیا\n"
+"\n"
+"میدادن آزارم ، بیزار از بازارم\n"
+"\n"
+"من بچه یِ آوارم ، بو کن توو آثارم\n"
+"\n"
+"از توو ملاتِ نیمه جونم ، تو رو فقط همراه دارم\n"
+"\n"
+"آه ، با تو بی حدَم یه رودِ ناقابلم\n"
+"\n"
+"که نیست حتی سدی مقابلم\n"
+"\n"
+"با دلم وایسادم صاف توو رویِ تلم\n"
+"\n"
+"من موی ولِ توو باد و باد توو موی ولم\n"
+"\n"
+"رفتنو نمیپام ، من غمو نمیخوام\n"
+"\n"
+"سوزنِ دوختنِ یَقمو نمیخوام\n"
+"\n"
+"حقِ من چیزی جز نفس های تو نیست\n"
+"\n"
+"اگه جز اینه حقمو نمیخوام\n"
+"\n"
+"با دلم وایسادم صاف توو رویِ تلم\n"
+"\n"
+"موی ولِ توو باد و باد توو موی ولم\n"
+"\n"
+"اندازه خواستنم ، کشیدم دستاتو\n"
+"\n"
+"قَدِ نرفتنام ، کشیدم پاهاتو\n"
+"\n"
+"قد قله ی غرورم دیدم اشکاتو\n"
+"\n"
+"قد سوزنم ، کشیدم لب هاتو\n"
+"\n"
+"با دلم وایسادم صاف توو رویِ تلم\n"
+"\n"
+"موی ولِ توو باد و باد توو موی ولم\n"
+"\n"
+"دخترم تو آخرین ناجیِ پاکیِ منی\n"
+"\n"
+"با تو مثِ قطره آب توو رودِ گِلم"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Berim(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(546, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 511, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-130, -1480, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "یه گوشه از جاده بیرون شهر\n"
+"\n"
+"صدای گریه های یه دختر پُر از ترس\n"
+"\n"
+"شبیهِ زوزه های باد معلق\n"
+"\n"
+"پُر از رفتن ، فرارِ از مرگ ، بریم عقب تر\n"
+"\n"
+"صدای سوت های همزمان و چَک مَس\n"
+"\n"
+"روی سنگ فرش ، آهنگ فرارِ دختر پُر از ترس ، بریم عقب تر\n"
+"\n"
+"شهر ، پُر از بوی گوشتِ تنِ بچه ـَست\n"
+"\n"
+"بریم عقب تر ، بریم عقب تر\n"
+"\n"
+"یه صَف بی خندست از پدر مادر ، بچه زیرِ بغل ، بریم عقب تر\n"
+"\n"
+"دست ها با لرز رو دهن نوزاد\n"
+"\n"
+"ترسِ بلندی صدا خفای تنفس\n"
+"\n"
+"کوچه های تاریک ، پاسبونا با خشم\n"
+"\n"
+"به دنبالِ نوزاد ، با سگ های تجسس\n"
+"\n"
+"بریم عقب تر ، بریم عقب تر\n"
+"\n"
+"جفت ها رو تخت مبارزه میکردند\n"
+"\n"
+"گرد و خاکِ رزمو ، این تکرارِ نسلو\n"
+"\n"
+"آویزون به گردن معاشقه میکردن ، بریم عقب تر\n"
+"\n"
+"بلندگوهای شهر ، تنها دلیلِ بالا آوردنِ سر\n"
+"\n"
+"اون شب دستورِ تولید میداد به ماده و نر\n"
+"\n"
+"خشک کرد آدما رو ، با اکوء بیشتر\n"
+"\n"
+"بریم عقب تر ، بریم عقب تر\n"
+"\n"
+"اونجا که میغلتن تَن ها رو خاک\n"
+"\n"
+"از خارش بی ناخن\n"
+"\n"
+"اونجا که کوره گِره ، اما شکسته دندون\n"
+"\n"
+"بریم عقب تر یه خُرده\n"
+"\n"
+"سر سفره رو سِپَر نیست غذا زن و مرد گرسنه ــَن\n"
+"\n"
+"نیست غذا ، بریم عقب تر\n"
+"\n"
+"شد شامِ یک شب کُل انبار یک شهر ، بریم عقب تر\n"
+"\n"
+"نونوا از توو تنور کمتر ، دَر میاره خنجر ، بریم عقب تر\n"
+"\n"
+"دیگه خوب نمیسوزه آتیشِ تنور\n"
+"\n"
+"یعنی آدمایِ بدبخت ، دیگه گوشتی ندارن که بسوزن\n"
+"\n"
+"نونوایی توو فکرِ آتیشِ جدیدتر ، بریم عقب تر\n"
+"\n"
+"اونجا که کشاورز ، کاشت با لبخند\n"
+"\n"
+"تیغ به جایِ گندم"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Negar_track(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(546, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 511, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-130, -1150, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "دو تا دستی که آرنجت از آفتاب میزنه دَم\n"
+"\n"
+"زانوهات رفیق چونه ـَتن نگار\n"
+"\n"
+"یه ترسی از جهان به قدرِ این جهان\n"
+"\n"
+"همیشه یه اُتِللو گیره توو گلوگاهِ گلوش\n"
+"\n"
+"شک بلیطِ دیدن منظرست\n"
+"\n"
+"یه عینک خاکستری نیازه\n"
+"\n"
+"طلای آفتابو مث خاک کجای جهان یار کدوماست؟\n"
+"\n"
+"بیارش ، طبیعتو طبعیتت جنگ میکنن\n"
+"\n"
+"وقتی سینه هات پیرهنتو تنگ میکنن\n"
+"\n"
+"هزار تا شاعر منتظرن قلم بزنن\n"
+"\n"
+"توو پیچ و خمِ زلفت قدم بزنن\n"
+"\n"
+"نفست نفسمو تنگ ، میکنه\n"
+"\n"
+"حالِ بدت حالِ منو بد میکنه\n"
+"\n"
+"تو پیدا ترین راهِ گمراهیامی\n"
+"\n"
+"تو اعتیادِ ترکِ معتادیامی\n"
+"\n"
+"اصلی ترین دلیلِ گستاخیامی\n"
+"\n"
+"زخم رو صورتِ جغرافیامی\n"
+"\n"
+"تو بهترین نقاشِ نقشی نگار\n"
+"\n"
+"رویِ تنِ جهان من پخشی نگار\n"
+"\n"
+"من هم شاعرم ، تو مخلوق من خالقم\n"
+"\n"
+"زندگیِ تو توو دستِ قلم منه\n"
+"\n"
+"نوشتمت أ دیشب پونزده ساله میگذره\n"
+"\n"
+"که نوزاد بودی فراری دادمت از\n"
+"\n"
+"شهری که کودک نداشت\n"
+"\n"
+"مگه من خواستم ، آوردی منو\n"
+"\n"
+"اووو تا کجا بُردی منو\n"
+"\n"
+"تبر ، کوره ، سَر میوردی\n"
+"\n"
+"میمُردی یه خانوم ازم درمیوردی\n"
+"\n"
+"من چیم کمتر از سیندرلاست\n"
+"\n"
+"چی میشد لنگه ی کفشم توو یه قَصرکی جا میموند\n"
+"\n"
+"دستام با یه دستی توو قصه یکی میشد\n"
+"\n"
+"تو یه لنگه از خودت جا گذاشتی سیندرلا\n"
+"\n"
+"توو رویای کودکی بازی کن با سرما\n"
+"\n"
+"چِش گذاشت دَر رو ، نمیدونمت\n"
+"\n"
+"شاید بد خط نوشتمت نمیخوننت\n"
+"\n"
+"دلیلِ خلق تو پیچیدست واسه خودم\n"
+"\n"
+"چه میدونم ، شاید تو یه طرحی از خودِ من\n"
+"\n"
+"همین پیچیدگی باعث شده بیچونمت\n"
+"\n"
+"قصه ی تو قصه ی خاکه\n"
+"\n"
+"بهای لگد مال شدن میده به گُله\n"
+"\n"
+"میونِ این همه مژده گونی بگیر که خوابن\n"
+"\n"
+"یه عمرو راه رفتن رو پنجه های پا نصیبته\n"
+"\n"
+"کلی راه نصیبته ، یه خِش خِش برگ مزاحم میتونه مرگ بشه\n"
+"\n"
+"دلیلِ تنفرت از پاییز همینه\n"
+"\n"
+"دلیل عشقت به شبِ تاریک همینه\n"
+"\n"
+"تو اگه نَوَزی مُردی\n"
+"\n"
+"قصه ی تو قصه یِ باده ، تو اگه نَوَزی مُردی"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Naghsh(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(546, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 511, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-130, -1370, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "آه میکشم زیرِ صدام ، آتیشِ نفس داغ ریه ـَمو\n"
+"\n"
+"صدام میگیره گُر ، بیدار میکنه خوابِ ریه ـَمو\n"
+"\n"
+"تموم خیابونا ، زیر پاها ، زیر صدا\n"
+"\n"
+"زیر نگاهِ گیرای چشا ، میگیره گُر میگه نگار\n"
+"\n"
+"زندگی ، منهای همه ی آینه های بی چشم سرخ\n"
+"\n"
+"میفهمی ، یه سرطان ضدِ سُرب\n"
+"\n"
+"یعنی تهِ پاییزتو جوری جر میدم عشق کنی\n"
+"\n"
+"سرتو بگیر بالا ، باید باز منو آرایش کنی\n"
+"\n"
+"رقصِ من ، رو صورتِ قانونای چرتِ توو دفترت\n"
+"\n"
+"یادت بمونه من کیم ، بیرون میزنم از سرت\n"
+"\n"
+"من خطِ هفتمم از هفت خط ترین هفت خطت\n"
+"\n"
+"آزاد میکنمت از جایی که زمان بستتت\n"
+"\n"
+"من توو خوشی زنده ــَم ، روی تنم گُناست\n"
+"\n"
+"نمیدونم سرم کجاست ، من توو خوشی زنده ــَم\n"
+"\n"
+"تو از چیزی که نوشتی نمیدونی\n"
+"\n"
+"ولی مینویسی جوری که میتونی\n"
+"\n"
+"گفتی نگار ، این تویی باد\n"
+"\n"
+"از سوزِ رو تنم چی میدونی\n"
+"\n"
+"کشیدی کشیدن دادی یادم\n"
+"\n"
+"حالا خودم میکِشم تو نمیتونی\n"
+"\n"
+"کشیدی چِشو من مُژمو روش\n"
+"\n"
+"لبو کشیدی من رُژمو روش\n"
+"\n"
+"فردا رو میکِشم خودمو توش\n"
+"\n"
+"تو نقاش نمیمونی ، من یه جنگل از درخت\n"
+"\n"
+"ارّه ها رو تووم نمیرونی\n"
+"\n"
+"حالا قلمتو بردار ، تو بنویس یا من کدوم\n"
+"\n"
+"بگو مینویسم برو ، یا که من مینویسم تو رو\n"
+"\n"
+"من تخمِ جنگم ، رنگ خنده هامو نمیدونی\n"
+"\n"
+"من استادِ رقصم ، میخوای چینِ دامنمو بپوشونی\n"
+"\n"
+"وقتی میچرخم ، زمین میزنه تَگَری ماه\n"
+"\n"
+"میزنه از الکل من ، مست میشه میشِ سیاه\n"
+"\n"
+"از این به بعد ایستادنم ، تو منو نمیشونی\n"
+"\n"
+"پیچوندم یه دنیا رو تو ، نمیتونی منو بپیچونی\n"
+"\n"
+"وسط گورستون میکوبم پا ، جای پاشنه ها\n"
+"\n"
+"میمونه رو قبرا ، میرقصم با مُرده ها\n"
+"\n"
+"من توو خوشی زنده ــَم ، روی تنم گُناست\n"
+"\n"
+"نمیدونم سرم کجاست ، من توو خوشی زنده ــَم"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Keshti(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(617, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 582, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-60, -1510, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "امروز مثلِ روزِ قبل بعد کار ، ناخواسته زدم توو بندرِ فرار\n"
+"\n"
+"غروب توو بغض مثلِ بچگیام ، وقتی نگام میرسید به آخر قطار\n"
+"\n"
+"کِشتی ها اومدن و رفتن ، ولی کِشتی من نمیندازه لنگر\n"
+"\n"
+"توو کدوم اقیانوس پنهونه ، میون کدوم آب ها زندونه\n"
+"\n"
+"دوباره رفتم دوبارّه رو ، انداختم زیر اندازِ پارّه رو\n"
+"\n"
+"بلندی بوقِ آخرین کَشتی ، بیدار کرد توو آسمون اولین ستاره رو\n"
+"\n"
+"که روشن شد آسمونِ لاغر ، یه کم معنی داد این انتظارِ یاوه رو\n"
+"\n"
+"ریشه اعتصاب آب کرده بود شاید ، که فراموش کرده بود انتظارِ ساقه رو\n"
+"\n"
+"تو نیستی آبم گِلیه ، تمومِ آفتابم گِلیه\n"
+"\n"
+"بیداری این روزا خوابِ تلخیه ، نیستی تموم خوابم گِلیه\n"
+"\n"
+"کودکیِ نابم گِلی ، دستای سابیده به تابم گِلی\n"
+"\n"
+"نفسمو راحت میدزدن اما ، نیستی صدای هاپ هاپَم گِلیه\n"
+"\n"
+"اقیانوسم مُرد کِشتی کجایی ، بندرم بازارِ فروش کَلَک شد\n"
+"\n"
+"رُخ نشون بده دِ لعنتی چوبت ، تَرکه ی شک شد باورم فلک شد\n"
+"\n"
+"اگه نیای امشب ، وسطِ دریام ، با اینکه سرده ، میلرزه دستام\n"
+"\n"
+"اقیانوسم مُرد کِشتی کجایی\n"
+"\n"
+"آهای عابر ، منم پامه ، زنجیر این ساحل\n"
+"\n"
+"روبروم آبه ، پُشت سرم خاکه\n"
+"\n"
+"گیرم وسط ، ترسم اینه که میمیرم وسط\n"
+"\n"
+"وقتی میای ، دلِ من ، دلِ شهر\n"
+"\n"
+"دلِ بندر میگیرن واست\n"
+"\n"
+"عُمری اسیرم ، لعنت به دریا ، کِشتی ندارم ، لعنت به سرما\n"
+"\n"
+"این روزا شلوغه ، اما بی فروغ ، شاید که خودِ کِشتی هم دروغه\n"
+"\n"
+"من تو باید یاد بگیریم شنا ، هر چند که این دریایِ کوچیک بزرگه\n"
+"\n"
+"بیا کِشتیِ هم باشیم عابر ، بیا با هم بشیم مسافر\n"
+"\n"
+"دستای من حاضرین پارو بشین ، چشم من میشی ناخدای من\n"
+"\n"
+"آهای سینه سُکانِ من میشی ، راهِ زیادی مونده تا خدایِ من\n"
+"\n"
+"اگه نیای امشب وسط دریام ، تمومِ راهو میرم با دستام\n"
+"\n"
+"بیا کشتیِ هم باشیم عابر ، بیا با هم بشیم مسافر\n"
+"\n"
+"اقیانوسم مُرد کِشتی کجایی ، بندرم بازارِ فروش کَلَک شد\n"
+"\n"
+"رُخ نشون بده دِ لعنتی چوبت ، تَرکه ی شک شد باورم فَلَک شد\n"
+"\n"
+"اگه نیای امشب ، وسطِ دریام ، با اینکه سرده ، میلرزه دستام\n"
+"\n"
+"اقیانوسم مُرد کِشتی کجایی"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Jari(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(553, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 518, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-150, -1630, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "جاری ام واسه جهت کُلی جا دارم\n"
+"\n"
+"واسه ریختنِ پشتِ سد کُلی جا دارم\n"
+"\n"
+"من از اونام که کمیّت رو به باد دادم\n"
+"\n"
+"تو از اونا که واسه عدد کُلی جا دارن\n"
+"\n"
+"پاتو میکوبی کفِ خاک میشی کوه\n"
+"\n"
+"لبِ درّه ام واسه پَرت کلی جا دارم\n"
+"\n"
+"دستات توو امنیت کُلی قابِلن\n"
+"\n"
+"من دستام واسه شرط کلی جا دارن\n"
+"\n"
+"بدون رنگ اَم تو ولی نه\n"
+"\n"
+"رنگ آمیزی میشی توو رنگای شهر\n"
+"\n"
+"دستاتو میبنده دستای سرد\n"
+"\n"
+"که دست بندِته رویِ دستای من\n"
+"\n"
+"تو پاهات توو همین شهر کُلی راه دارن\n"
+"\n"
+"من واسه شهرای بعد کُلی جا دارم\n"
+"\n"
+"زنجیرِ خطری تحمیلِ نظری\n"
+"\n"
+"منکِرتم ، واسه رَد کُلی جا دارم\n"
+"\n"
+"زندونِ اونایی که قصدِ هوا دارن\n"
+"\n"
+"من واسه عطشایِ لب کُلی جا دارم\n"
+"\n"
+"نفسات ازم جزر و میخوان و من\n"
+"\n"
+"نفسام هنو واسه مَد کلی جا دارن\n"
+"\n"
+"بدون رنگ اَم تو ولی نه\n"
+"\n"
+"رنگ آمیزی میشی توو رنگای شهر\n"
+"\n"
+"دستاتو میبنده دستای سرد\n"
+"\n"
+"که دست بندِته روی دستای من\n"
+"\n"
+"بدون رنگ اَم تو ولی نه\n"
+"\n"
+"رنگ آمیزی میشی توو رنگای شهر\n"
+"\n"
+"دستاتو میبنده دستای سرد\n"
+"\n"
+"که دست بندِته رویِ دستای من"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Morphin(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(648, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 613, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-10, -1500, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "شیکممون کاردو بُرید ، گلومون طنابو جویید\n"
+"\n"
+"وعده های سم میخوریم ، معدمون سَمو بُرید\n"
+"\n"
+"ارتفاع اَدا اصول درآورد ، جاذبه حرکتِ گوله رو خورد\n"
+"\n"
+"بعد از هزار سال از دنبال مرگ ، گشتن شدیم نا امید\n"
+"\n"
+"عمیق ترین دریا یه شوخیِ مضحک بود ،گسل ضربِ زمین یا قوطیِ مُطرب بود\n"
+"\n"
+"تقویم زمانو تُف کرد معلوم نی چندمو ، رعد و برق نترسون ساقه هایِ گندمو\n"
+"\n"
+"خطر توو خواب عمیقِ ما داد میزنیم ، لعنتی شکلِ زندگی عجیبه\n"
+"\n"
+"نه بُمب ، نه کارد ، نه گارد ، نه مرگ ،شهرِ همیشه ها شهرِ لطافتِ تیغه\n"
+"\n"
+"آی باد ، صدای زوزه ی کفشت ، میاد توو کوچه ی مغزم\n"
+"\n"
+"تو هم مثلِ من تبعید شدی میون این جهان\n"
+"\n"
+"آی ، بچرخ میون بوته ها ،آی پیدا کن بذرِ این جهانو\n"
+"\n"
+"باد بشکن ، حبس و بندِ مرگو ، این ابدیّت داره میکُشه انسانو ، آی باد\n"
+"\n"
+"بعدِ رقصِ مورفین توو شاهرگِ جنجال ، توو بزمِ جنگ دَم از دوستی زدن\n"
+"\n"
+"زمستون با شهوت لُخت کرد درختو ، اینجا سایه ها از سرما رو*پی ترن\n"
+"\n"
+"زیرِ درختای لخت از سایه میگفت ، آهن کشید دورِ دستای تیغو\n"
+"\n"
+"تیزیِ حقیقت زیرِ مورفین آرامش ، هر سایه ی دروغ از همسایه میگفت\n"
+"\n"
+"ویروسِ رو*پی مُسریِ آرامش ، آماده بود واسه انتشار\n"
+"\n"
+"موجِ دستِ دوستی ، با کارد زیر آستین\n"
+"\n"
+"ابتذال اتفاق افتاد ، اونجا که جهانش شد آرمانش\n"
+"\n"
+"دید که مالامالِ از دروغ ، دلش گرفت از غروب\n"
+"\n"
+"حقیقتو رنگ کرد با طلوع\n"
+"\n"
+"خُنکای سایه داشت اهمیت میگرفت ، کم کم جهانش رنگِ ابدیّت میگرفت\n"
+"\n"
+"جهل مرگو زنجیر کرد ، ارزشِ فرصت رو به تحلیل رفت\n"
+"\n"
+"آیینه بی جیوه شد ، شیشه شد بازتابو باخت\n"
+"\n"
+"آه ، مرگو کُشت آرمانو ساخت\n"
+"\n"
+"ساعت ایستاد ، زمان عتیقه شد ، خوابِ آرامش توو تخت ابدیّت بیمه شد\n"
+"\n"
+"تووی وهم سایه از بی برگیِ درخت غافل موند ، جهانش بی میوه شد\n"
+"\n"
+"آی باد ، صدای زوزه ی کفشت ، میاد توو کوچه ی مغزم\n"
+"\n"
+"تو هم مثلِ من تبعید شدی میون این جهان\n"
+"\n"
+"آی ، بچرخ میون بوته ها ، آی پیدا کن بذرِ این جهانو\n"
+"\n"
+"باد بشکن ، حبس و بندِ مرگو ، این ابدیّت داره میکُشه انسانو ، آی باد\n"
+"\n"
+"با سوزِ وزیدن این چُرتو پاره کن ، آی باد بیا و بشکن این رویایِ ساکنو ، آی باد\n"
+"\n"
+"پیدا کن مرگِ این جهانو ، آی باد این ابدیّت داره میکُشه انسانو"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Atash(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(648, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 613, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-40, -1770, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "زورتون زیاده قبول\n"
+"\n"
+"حالا که پوست کفِ دستمو میسابونین\n"
+"\n"
+"هنوزم میزنم زور میبینی جور دیگه ام\n"
+"\n"
+"از یه جُلون دیگه اَم\n"
+"\n"
+"من دستام بوی پارگی فشار میده رو تنِ زنجیر\n"
+"\n"
+"داستانِ زندگی من و تحمیل\n"
+"\n"
+"علت قطعِ رابطه ام با خط\n"
+"\n"
+"علت قطع مسیر غلطِ زندگیم عقب تغییر\n"
+"\n"
+"لانتوریا بو بکِشین جا پایِ کفشمو رو سنگ فرش\n"
+"\n"
+"سو بکشین چون لخت و بی پرده ـَم\n"
+"\n"
+"قرمزم به رنگِ خون ، شاخای گاومیشِ قانون بالا میده جون\n"
+"\n"
+"حالام میتِکوند خاک رو تنم ، من زیرش وحشی ترم\n"
+"\n"
+"میده زمینِ سرد و دوره گردتونو با سوز چاک بودنم\n"
+"\n"
+"تَنم ، تنتو جمع میکنه ، سردیِ صورتتو گرم میکنه\n"
+"\n"
+"دنبالِ من توو اقیانوسا نگرد ، اقیانوستو أ تنم کَم میکنه\n"
+"\n"
+"من همون گوشه یِ شرورِ زیرِ حصارِ کج چِشاتم\n"
+"\n"
+"جوری میزنم اونی که بخواد بگیره جلوتو شر میکنه\n"
+"\n"
+"مثِ بنزینِ رو تنم ، صورت تو مُخ منو نقش میکنه\n"
+"\n"
+"لانتوریا جوییدنتون واسه من ، خوردن کاه توو آتیشه\n"
+"\n"
+"نقشم ، مورفینِ تنتونو تَرک میکنه\n"
+"\n"
+"آه ، مثِ آرامشِ دکوری من ، زیرِ زور سیمانای بتونی شهر\n"
+"\n"
+"مثِ سگِ تووی سینه ی کُولیِ من ، مثِ چرا های تو و چطوری من\n"
+"\n"
+"مث دونه دونه گوگردِ تنتون ، پُر واسه جنگ به پُریِ من\n"
+"\n"
+"مثِ شعله های من با نفسِ تنگ ، مثِ چرا های تو و چطوری من"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Tark(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(648, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 613, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-20, -1720, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "من و تو هر دو توو اسارتیم ، من اسیرِ یه سر تو اسیرِ یه دست\n"
+"\n"
+"من و تو هر دو بدون تصمیم ، من و تو هر دو حاضرِ تقدیر\n"
+"\n"
+"دل به من نبند من یه روزی توو بادم ، یه روز زیرِ شونه ــَم یه روزی آزادم\n"
+"\n"
+"تقدیرم این بود نگاهم کنی ، هی بلند شم و تو کوتاهم کنی\n"
+"\n"
+"کُندی نکن کارِ تو بریدنه ، نترس کارِ من دوباره رویینده\n"
+"\n"
+"اگه نَبُری و دم أ جنگ بزنی ، شاید یه گوشه توو انبار زنگ بزنی\n"
+"\n"
+"این منم یه آه زندونیِ سر ، یه روز سیاه یه روز سفید یه روز مرگ\n"
+"\n"
+"صدای دستای آهنیت رسید به گوشم ، وقتی اومدم بیرون از زیر تِلِ سر\n"
+"\n"
+"آزادی چه بی تضمینی ، توو این سلولای توو در توو یه بیماری آه\n"
+"\n"
+"زندونیا زندون بانِ زندونیایِ زندون بانِ زندونیان\n"
+"\n"
+"آخ آزادی بی تضمینی ، توو این سلولای توو در توو یه بیماری\n"
+"\n"
+"زندونیا زندون بانِ زندونیایِ زندون بانِ زندونیان\n"
+"\n"
+"زیرِ تِل کنارِ باقی موها ، توو آرامش الکی چروکیدم\n"
+"\n"
+"دستام سپرِ سرم شده بود اما ، زیرِ این سنگر دروغی پوسیدم\n"
+"\n"
+"من یه تارِ مو پُر از ترک مرفینِ تِل تن به حقیقتِ فردا قیچی دادم\n"
+"\n"
+"تویی همون قیچیِ خسته از بُریدن ، پُر از فریاد نمیخوام قیچی باشم\n"
+"\n"
+"من و تو هر دو توو اسارتیم ، من و تو هر دو زخمی عادتیم\n"
+"\n"
+"شاید با بریدنات بیمه شم ، توی آینه ی تکرارت دیده شم\n"
+"\n"
+"اما واسه من یه راهِ دیگه هست ، شاید سقوط شاید ریزش ــَم\n"
+"\n"
+"این سقوط آغازِ آزادیه ، باید بتونم بیخیال این ریشه شم\n"
+"\n"
+"یا که تووی دستِ باد مسموم نیفتم ، آخ که رهایی حقیقتی نیست\n"
+"\n"
+"من و تو طبیعتمون مخالفِ همه ، قرارمون اونجا که طبیعتی نیست\n"
+"\n"
+"آزادی چه بی تضمینی ، توو این سلولای توو در توو یه بیماری\n"
+"\n"
+"زندونیا زندون بانِ زندونیایِ زندون بانِ زندونیان\n"
+"\n"
+"آخ آزادی بی تضمینی ، توو این سلولای توو در توو یه بیماری\n"
+"\n"
+"زندونیا زندون بانِ زندونیایِ زندون بانِ زندونیان"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Pak(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(648, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 613, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-30, -1410, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "مهم اینه بتونم ، مهم اینه که بخونم\n"
+"\n"
+"مهم اینه که این شعر لعنتی رو ، رو این بیتِ ناقص واست بِشونم\n"
+"\n"
+"من پا برهنه ـَم عین بچه ـَم ، عین شعرم ، عین خطم\n"
+"\n"
+"کج و معوج ولی خوانا ، مهم اینه زنده بمونم\n"
+"\n"
+"بعیده بتونی پاک بکنی منو ، بعیده توو خاک بکنی منو\n"
+"\n"
+"از تووی بوم جا شدنی نی ، بعیده توو قاب بکنی منو\n"
+"\n"
+"پا بده پا بده پا بده جلو پا بده\n"
+"\n"
+"من کفشمو دستم کردم أ قبل میدونستم میزنیم زمین\n"
+"\n"
+"من جیگرمو قلبم کردم سینمو کردم سینِشو سفت ،اسبمو کردم زینِشو چفت\n"
+"\n"
+"عین اون عشق مصر ، تو فقط داره کو* شینش و قِر\n"
+"\n"
+"تو مفیدی توو تولید پِرت ،سنگین نی اونکه تند میره یه\n"
+"\n"
+"کاند*م بکشین دور صداتون توو شماها زیاده تولیدِ مثل\n"
+"\n"
+"سرِ تو توو راه ، من عکستو ها ، روزایِ تو سخت ، روزایِ من تار\n"
+"\n"
+"عدالت بین ما رفته به باد، من قافیه جلومه با تنِ لَت و پار\n"
+"\n"
+"بیشتر میفهمی درباره من ، تاریخ از جفتمون لَجاره (بی حیا ) تَره\n"
+"\n"
+"میخونه بچه ــَم همراهِ تو ، یا بچه یِ تو درباره من آه\n"
+"\n"
+"دستاتونو پاک کنین از بویِ زنجیر ، ندارم دستی توو دستاتون\n"
+"\n"
+"این منم تغییر با رپ رپ رپ رپ ،مخالفِ زنجیر با رپ ، رپ رپ رپ\n"
+"\n"
+"دستاتونو پاک کنین از بوی زنجیر ، ندارم دستی توو دستاتون\n"
+"\n"
+"این منم تغییر با رپ رپ رپ رپ ،مخالفِ زنجیر با رپ ، رپ رپ رپ\n"
+"\n"
+"استایل زیرِ پوستی ، روس*ی ، دستا واسه دوستی ، روس*ی\n"
+"\n"
+"زیر آلتِ داد و ستد ، حامله میشین أ لا پای جهل\n"
+"\n"
+"میمیره بچه ی چِرک بدی ، سقط جَنین اگه ماما بشم\n"
+"\n"
+"این حالتِ استفراغ صدا ، ناقابلِ واسه مغزِ منفعِله\n"
+"\n"
+"ناقل ویروسِ عامل انفعالِ صداتون ، فاح*ه ها ی شیر خوار زِنا\n"
+"\n"
+"بی بُنیه هایِ بی مصرفِ بی بالِ بی اندیشه هایِ منحرفِ طالبِ جاه\n"
+"\n"
+"پا بده پا ، من کفشام تووی دستامه چونکه فاصله راه\n"
+"\n"
+"تو حاصلِ پای بابای بیچاره ـَت حاصلِ رات زیرِ پایِ بچه ـَت مثِ پاشنه بخواب\n"
+"\n"
+"فاحش* ها ، خاکِ خریتو کاخ میکنین ، خودکارای جهلی بی جوهر ورقِ تاریخو سوراخ میکنین\n"
+"\n"
+"اینو از تو فهمیدم جهله ، کلِ زمانی که ازم میگذره\n"
+"\n"
+"پس بهتره پاک باشم أ تاولِ ، کفِ دستِ مخدرِ باور\n"
+"\n"
+"رویِ زنجیرِ عادت ، هدیه جهله جدّم دیدم اینه سهمِ قدّم\n"
+"\n"
+"دستاتونو پاک کنین از بوی زنجیر ، ندارم دستی توو دستاتون\n"
+"\n"
+"این منم تغییر با رپ رپ رپ رپ ،مخالفِ زنجیر با رپ ، رپ رپ رپ\n"
+"\n"
+"دستاتونو پاک کنین از بوی زنجیر ، ندارم دستی توو دستاتون\n"
+"\n"
+"این منم تغییر با رپ رپ رپ رپ ،مخالفِ زنجیر با رپ ، رپ رپ رپ"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Toorbin(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(648, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 613, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-30, -1960, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "پا گذاشت روی خاک ، زمینو شکافت\n"
+"\n"
+"قد کشید هوا رو بلعید بعد چرخید\n"
+"\n"
+"دور خودش اما ، به جای اول رسید\n"
+"\n"
+"شکوه اون چیزی نبود به جز چندتا ، دستورِ آماده از قبل همین قَده دنیاش\n"
+"\n"
+"یه توربینِ تنها منتظر عابر ، بی مصرف تا وقتی بیاد یه بادِ مسافر\n"
+"\n"
+"من اون بادِ مسافرم خبر دارم کلی خبر\n"
+"\n"
+"یه چیزایی تو کله ی من هست ، که باید برسونمشون به کُلی گوش بی خبر\n"
+"\n"
+"از سر رام برو کنار ، میشکونمت حتی اگه چوبِته از جنسِ چنار\n"
+"\n"
+"باد کارِ تو تولید برقه ، تا من اینجائم خبر یه حرفه\n"
+"\n"
+"الان تورو میبلعمت واسه تولیدِ نور خوب بزن جرقه\n"
+"\n"
+"توی شهری که تاریکی خون کرد ، اینو گفت و بادو زندون کرد\n"
+"\n"
+"احمق تولید روشنایی وهمه ، احمق سرتو بیرون بیار أ وَهمت\n"
+"\n"
+"احمق من قراره باشم اون بَرقه ، اَرّه ها که فقط میزنن جرقه رو تن درخت\n"
+"\n"
+"آزادم کن آزادم کن آزادم کن آزادم کن\n"
+"\n"
+"احمق من بی گناهم ، من حاملِ یه بارم\n"
+"\n"
+"احمق تو نیستی مقصد ، من بعد از تو کُلی کار دارم ، نزن ، نچرخ"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Toofan(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(648, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 613, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(-30, -1360, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "زیر زنجیر دیو سیاه ، زیر نفسای سینه سیاه\n"
+"\n"
+"هنوز آدرس پریا میده\n"
+"\n"
+"کَنده از مرز زمان ، مثل صدف رو عرض جهان\n"
+"\n"
+"خشکی زده ، گوشاتو بچسبون بش صدای دریا میده\n"
+"\n"
+"این منم یه تن روی خس زیر خستگی هیاهوی کویر\n"
+"\n"
+"این منم یه خسته ی ریل ، این منم یه واگن سیر\n"
+"\n"
+"گذشته از ایستگاهِ عطش ، تشنه حتی کنار دریا\n"
+"\n"
+"این منم بی باور به آب ، این منم\n"
+"\n"
+"این منم دست زیر تنِ ترکه ی پتیاره ها\n"
+"\n"
+"تاول کف پام ، با پای پیاده لای پا\n"
+"\n"
+"پای برهنه متوهم کفش\n"
+"\n"
+"این منم نقش زیر تن شهر تیغ تا یه تف به گُندگی دهن صدا\n"
+"\n"
+"ناخن کشیده شده ی خنده ، زاییده ی زادگاه ساحره ها\n"
+"\n"
+"این منم درد باورم ، پاره قلب نفس تَلَکه شدم\n"
+"\n"
+"زیر خطر دردِ ارّه ها ، این منم نبرد ارّه ها\n"
+"\n"
+"از جنگِ زمین بُریده ، یه پای روحمو مین جوییده\n"
+"\n"
+"این منم دفتر پُر از خطر خاطرات خط های روی تنم\n"
+"\n"
+"پاک نمیشن نیم صفحه سفیدی رو جا زد ، خاطره مداد و میتراشید\n"
+"\n"
+"صفحه ی شکستگیمو تا زد\n"
+"\n"
+"محکم گفت پَرَم شکست ، نوک مدادش رو تنم شکست\n"
+"\n"
+"شاعرم کرد شعر شد ، هر کلمه که روی تَنم نشست\n"
+"\n"
+"خط های روی تنم پاک نمیشن نیم صفحه سفیدی رو جا زد\n"
+"\n"
+"خاطره مداد و میتراشید ، صفحه ی شکستگیمو تا زد\n"
+"\n"
+"محکم گفت پَرَم شکست ، نوک مدادش رو تنم شکست\n"
+"\n"
+"شاعرم کرد شعر شد ، هر کلمه که روی تَنم نشست\n"
+"\n"
+"از آب گذشتم بوی ماهیِ مُرده میدم\n"
+"\n"
+"از کلمه های مُرده گذشتم ، بوی سوی یه جمله میدم\n"
+"\n"
+"تو که چشمات بازه واسه دیدنِ من ، نگام کُن بو عقده میدم\n"
+"\n"
+"من میونِ دودِ میونِ گَلوم ، عمریه بوی سُرفه میدم\n"
+"\n"
+"از این همه پاسخ گذشتم ، بوی اونکه میپرسه میدم\n"
+"\n"
+"خوب نگام کن من یه صدا ، بیرون زده از شهرِ سُکون\n"
+"\n"
+"شهر خستگیِ پنجه ی پا\n"
+"\n"
+"من یه قلبِ بیرون از بدن ، بوی سینه های جِر خورده میدم\n"
+"\n"
+"من اون طوفان خسته ــَم ، بوی برگای دل مُرده میدم\n"
+"\n"
+"ایستادن مرگِ منه ، بوی رفتن توی جمله میدم\n"
+"\n"
+"این منم ، نگار تو ، زخمی مداد تو\n"
+"\n"
+"تووی همه ی آبای دنیا ، دنبالِ کِشتی نگاهِ تو\n"
+"\n"
+"گفتی نگار این تویی باد ، این منم طوفانِ صدای تو\n"
+"\n"
+"دنبالِ رهائیم ، توو نرفته های تو"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ui_Marg(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(693, 702)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(255, 212, 82);\n"
+"\n"
+"border-radius:15px;")
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.scrollArea = QtWidgets.QScrollArea(self.centralwidget)
+        self.scrollArea.setMouseTracking(False)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollArea.setObjectName("scrollArea")
+        self.scrollAreaWidgetContents = QtWidgets.QWidget()
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 658, 5018))
+        self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
+        self.frame.setMinimumSize(QtCore.QSize(0, 5000))
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label = QtWidgets.QLabel(self.frame)
+        self.label.setGeometry(QtCore.QRect(20, -1470, 600, 4991))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(17)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background-color:none;\n"
+"color: #f05053;")
+        self.label.setObjectName("label")
+        self.pushButton_exit = QtWidgets.QPushButton(self.frame)
+        self.pushButton_exit.setGeometry(QtCore.QRect(400, 30, 18, 18))
+        self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_exit.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_exit.setText("")
+        self.pushButton_exit.setObjectName("pushButton_exit")
+        self.pushButton_min = QtWidgets.QPushButton(self.frame)
+        self.pushButton_min.setGeometry(QtCore.QRect(370, 30, 18, 18))
+        self.pushButton_min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_min.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_min.setText("")
+        self.pushButton_min.setObjectName("pushButton_min")
+        self.pushButton_back = QtWidgets.QPushButton(self.frame)
+        self.pushButton_back.setGeometry(QtCore.QRect(340, 30, 18, 18))
+        self.pushButton_back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.pushButton_back.setStyleSheet("QPushButton{\n"
+"background-color:#f05053;\n"
+"border-radius:4px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 212, 82);\n"
+"border-radius:4px;\n"
+"}\n"
+"")
+        self.pushButton_back.setText("")
+        self.pushButton_back.setObjectName("pushButton_back")
+        self.verticalLayout_2.addWidget(self.frame)
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.verticalLayout.addWidget(self.scrollArea)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_min.clicked.connect(MainWindow.showMinimized)
+        self.pushButton_exit.clicked.connect(MainWindow.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "از طرف راهِ ندیده ها ، سرزمینی به اسم کشف\n"
+"\n"
+"توان پذیرش یه صدا ، حتی مخالف عقیده ها\n"
+"\n"
+"از طرف شکافِ لایه ها ، اوجِ حضورم تووی عمق عبورت\n"
+"\n"
+"توو لمس پدیده هاست\n"
+"\n"
+"از طرف کفه ی برابر ، تا میون خنده ها نمیری\n"
+"\n"
+"از طرف لبی پاره خط گون ، تا گوشاتو از رو صدا نگیری\n"
+"\n"
+"از سمت جرئت حملِ قامت ، بیدارِ شبونه ی امانت\n"
+"\n"
+"از سمت چیزی به اسم حقیقت ، آخرین دیوار بی ضمانت\n"
+"\n"
+"من اون فصلِ سردم وقتِ تعویض لباساته ، قیچی باغبونم زمانی که وقتِ هَرَس تَبَرگاته\n"
+"\n"
+"از طرف نیمه های خالی ، نقشه ی فرداهای خیالی\n"
+"\n"
+"از طرف درخت های بی برگ ، پایانِ محضِ نونهالی\n"
+"\n"
+"از طرف جنون با رضایت ، شروع بیماری تا سرایت\n"
+"\n"
+"زخم شکنجه ای به اسم دنیا ، از سمتِ تجربه تا روایت\n"
+"\n"
+"واسه ی تو دلسرد ، باد دوره گرد\n"
+"\n"
+"منو قبولم کن ، این منم مرگ\n"
+"\n"
+"منم آخرین ثانیه ، آخرین هُرم گلویی که باقیه\n"
+"\n"
+"تویی آخرین حس پایان وزن ، منم آخرین قافیه\n"
+"\n"
+"رفتی میون دفتر ، خط کشی نفس گیر بود\n"
+"\n"
+"نظمو زیر و رو کردی ، روندنت توو حاشیه\n"
+"\n"
+"کوچیک شد خونت ، اما جهانت نه\n"
+"\n"
+"یه زندگیِ دوبارست ، اون شعری که ازت باقیه\n"
+"\n"
+"گردی به قدّ دستات ، پنجه هاتو توو خاک\n"
+"\n"
+"جوونه از مشتت ریخت ، وقتی دستاتو وا کردم\n"
+"\n"
+"توو خاکِ حاصل خیزِ نبودنت که جایِ رشد بود\n"
+"\n"
+"جشن آبیاری بودنتو خاطره هات به پا کردن\n"
+"\n"
+"کِشیدی دست از زنجیر ، این اعتیاد و لِه کردی\n"
+"\n"
+"انزواهایِ پاکیت ، بلند من رو صدا کردن\n"
+"\n"
+"هر چی از حقیقت دیدی ، صمیمی تر شدی با من\n"
+"\n"
+"تا صفحه یِ بودنت رو با دستام تا کردم\n"
+"\n"
+"منم آخرین لحظه ای که توو قامتی ، منم آخرین رنگی که رو شهامتی\n"
+"\n"
+"آغاز تا حالت رو توو پایانت انشاء کردم ، زنجیرتو وا کردی دستامو به روت وا کردم\n"
+"\n"
+"حقیقت شکست بود ، خم شدن توو زندگی\n"
+"\n"
+"در زندان ندیدن رو روی دیدنت وا کردن\n"
+"\n"
+"پایِ برگه یِ حقیقت رو که شکست بود و بس\n"
+"\n"
+"با دستِ پُر از بویِ پارکی زنجیرت امضاء کردم"))
+
+
+
+
+
+
+
 

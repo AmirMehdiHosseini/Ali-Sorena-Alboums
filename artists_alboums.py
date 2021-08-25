@@ -208,7 +208,6 @@ class Ui_Alboums(object):
         self.label_alboums.setText(_translate("MainWindow", "Alboums"))
         self.pushButton_avar.setText(_translate("MainWindow", "Aavar"))
         self.pushButton_kavir.setText(_translate("MainWindow", "Kavir"))
-        self.pushButton_negar.setText(_translate("MainWindow", "Nagar"))
+        self.pushButton_negar.setText(_translate("MainWindow", "Negar"))
         self.pushButton_gavazn.setText(_translate("MainWindow", "Gavazn"))
         self.pushButton_single.setText(_translate("MainWindow", "Single-tracks"))
-
