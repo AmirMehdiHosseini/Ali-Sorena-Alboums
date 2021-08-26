@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(399, 613)
+        MainWindow.resize(399, 264)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)
@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.pushButton_sorena = QtWidgets.QPushButton(self.frame)
-        self.pushButton_sorena.setGeometry(QtCore.QRect(72, 130, 241, 51))
+        self.pushButton_sorena.setGeometry(QtCore.QRect(100, 150, 181, 51))
         font = QtGui.QFont()
         font.setFamily("Dosis")
         font.setPointSize(18)
@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_sorena.setObjectName("pushButton_sorena")
         self.label_artists = QtWidgets.QLabel(self.frame)
-        self.label_artists.setGeometry(QtCore.QRect(129, 10, 151, 91))
+        self.label_artists.setGeometry(QtCore.QRect(140, 10, 151, 91))
         font = QtGui.QFont()
         font.setFamily("Dosis ExtraBold")
         font.setPointSize(30)
@@ -54,78 +54,6 @@ class Ui_MainWindow(object):
         self.label_artists.setStyleSheet("background-color:none;\n"
 "color:#f05053;")
         self.label_artists.setObjectName("label_artists")
-        self.pushButton_bahram = QtWidgets.QPushButton(self.frame)
-        self.pushButton_bahram.setGeometry(QtCore.QRect(72, 210, 241, 51))
-        font = QtGui.QFont()
-        font.setFamily("Dosis")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton_bahram.setFont(font)
-        self.pushButton_bahram.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_bahram.setStyleSheet("QPushButton{\n"
-"  background-color :#f05053;\n"
-"  color:#ffd452;\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color :#ffd452;\n"
-"  color:#f05053;\n"
-"}")
-        self.pushButton_bahram.setObjectName("pushButton_bahram")
-        self.pushButton_sadegh = QtWidgets.QPushButton(self.frame)
-        self.pushButton_sadegh.setGeometry(QtCore.QRect(72, 370, 241, 51))
-        font = QtGui.QFont()
-        font.setFamily("Dosis")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton_sadegh.setFont(font)
-        self.pushButton_sadegh.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_sadegh.setStyleSheet("QPushButton{\n"
-"  background-color :#f05053;\n"
-"  color:#ffd452;\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color :#ffd452;\n"
-"  color:#f05053;\n"
-"}")
-        self.pushButton_sadegh.setObjectName("pushButton_sadegh")
-        self.pushButton_bamdad = QtWidgets.QPushButton(self.frame)
-        self.pushButton_bamdad.setGeometry(QtCore.QRect(72, 290, 241, 51))
-        font = QtGui.QFont()
-        font.setFamily("Dosis")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton_bamdad.setFont(font)
-        self.pushButton_bamdad.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_bamdad.setStyleSheet("QPushButton{\n"
-"  background-color :#f05053;\n"
-"  color:#ffd452;\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color :#ffd452;\n"
-"  color:#f05053;\n"
-"}")
-        self.pushButton_bamdad.setObjectName("pushButton_bamdad")
-        self.pushButton_yas = QtWidgets.QPushButton(self.frame)
-        self.pushButton_yas.setGeometry(QtCore.QRect(72, 450, 241, 51))
-        font = QtGui.QFont()
-        font.setFamily("Dosis")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton_yas.setFont(font)
-        self.pushButton_yas.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_yas.setStyleSheet("QPushButton{\n"
-"  background-color :#f05053;\n"
-"  color:#ffd452;\n"
-"}\n"
-"QPushButton:hover{\n"
-"  background-color :#ffd452;\n"
-"  color:#f05053;\n"
-"}")
-        self.pushButton_yas.setObjectName("pushButton_yas")
         self.pushButton_exit = QtWidgets.QPushButton(self.frame)
         self.pushButton_exit.setGeometry(QtCore.QRect(334, 30, 18, 18))
         self.pushButton_exit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -182,18 +110,5 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton_sorena.setText(_translate("MainWindow", "Ali-Sorena"))
-        self.label_artists.setText(_translate("MainWindow", "Artists"))
-        self.pushButton_bahram.setText(_translate("MainWindow", "Bahram-Nouraee"))
-        self.pushButton_sadegh.setText(_translate("MainWindow", "Sadegh-Vahedi"))
-        self.pushButton_bamdad.setText(_translate("MainWindow", "Bamdad"))
-        self.pushButton_yas.setText(_translate("MainWindow", "Yas-tunes"))
+        self.label_artists.setText(_translate("MainWindow", "Artist"))
 
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

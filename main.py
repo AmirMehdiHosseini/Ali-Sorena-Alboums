@@ -30,6 +30,862 @@ my_cursor = my_db.cursor()
 
 
 
+class Cut(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Cut()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Dashte(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Dashte()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Asayeshgah(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Asayeshgah()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class sixteen(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_16()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NaMimiram(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_NaMimiram()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Pelikan(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Pelikan()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Istgah(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Istgah()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Gavazn_track(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Gavazn_track()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Laghzesh(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Laghzesh()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Ghalb(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Ghalb()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Bad_pichid(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Bad_pichid()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Raghs(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Raghs()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Birahe(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Birahe()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Goriz(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Goriz()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Dar(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Daar()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Nakhoda(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Nakhoda()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Harkat(QMainWindow):
+    def __init__(self):
+
+        QMainWindow.__init__(self)
+        self.ui = Ui_Harkat()
+        self.ui.setupUi(self)
+        self.setWindowFlag(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.ui.pushButton_back.clicked.connect(self.back)
+
+
+
+    def mousePressEvent(self,evt):
+        self.oldPos = evt.globalPos()
+
+
+    def mouseMoveEvent(self, evt):
+        delta = QPoint(evt.globalPos() - self.oldPos)
+        self.move(self.x() + delta.x() , self.y() + delta.y())
+        self.oldPos = evt.globalPos()
+
+    def back(self):
+        self.back2 = Gavazn()
+        self.back2.show()
+        self.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class Nafir(QMainWindow):
@@ -1964,6 +2820,24 @@ class Gavazn(QMainWindow):
         self.setWindowFlag(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.ui.pushButton_back.clicked.connect(self.back)
+        self.ui.pushButton_Harkat.clicked.connect(self.harkat)
+        self.ui.pushButton_nakhoda.clicked.connect(self.nakhoda)
+        self.ui.pushButton_daar.clicked.connect(self.daar)
+        self.ui.pushButton_goriz.clicked.connect(self.goriz)
+        self.ui.pushButton_birahe.clicked.connect(self.birahe)
+        self.ui.pushButton_raghs.clicked.connect(self.raghs)
+        self.ui.pushButton_bad_pichid.clicked.connect(self.bad_pichid)
+        self.ui.pushButton_ghalbhaye.clicked.connect(self.ghalb)
+        self.ui.pushButtoon_laghzeshh.clicked.connect(self.laghzesh)
+        self.ui.pushButton_gavazn.clicked.connect(self.gavazn)
+        self.ui.pushButton_istgah.clicked.connect(self.istgah)
+        self.ui.pushButton_pelikan.clicked.connect(self.pelikan)
+        self.ui.pushButton_na_mimiram.clicked.connect(self.namimiram)
+        self.ui.pushButton_sixteen.clicked.connect(self.sixteen)
+        self.ui.pushButton_asayeshgah.clicked.connect(self.asayeshgah)
+        self.ui.pushButton_dashte.clicked.connect(self.dashte)
+        self.ui.pushButtoon_cut.clicked.connect(self.cut)
+
 
 
     def mousePressEvent(self,evt):
@@ -1980,6 +2854,127 @@ class Gavazn(QMainWindow):
         self.back2 = Alboums()
         self.back2.show()
         self.close()
+
+
+
+    def harkat(self):
+        self.panel2 = Harkat()
+        self.panel2.show()
+        self.close()
+
+
+    def nakhoda(self):
+        self.panel2 = Nakhoda()
+        self.panel2.show()
+        self.close()
+
+
+    def daar(self):
+        self.panel2 = Dar()
+        self.panel2.show()
+        self.close()
+
+
+    def goriz(self):
+        self.panel2 = Goriz()
+        self.panel2.show()
+        self.close()
+
+
+
+    def birahe(self):
+        self.panel2 = Birahe()
+        self.panel2.show()
+        self.close()
+
+
+
+    def raghs(self):
+        self.panel2 = Raghs()
+        self.panel2.show()
+        self.close()
+
+
+
+    def bad_pichid(self):
+        self.panel2 = Bad_pichid()
+        self.panel2.show()
+        self.close()
+
+
+
+
+    def ghalb(self):
+        self.panel2 = Ghalb()
+        self.panel2.show()
+        self.close()
+
+
+    def laghzesh(self):
+        self.panel2 = Laghzesh()
+        self.panel2.show()
+        self.close()
+
+
+
+    def gavazn(self):
+        self.panel2 = Gavazn_track()
+        self.panel2.show()
+        self.close()
+
+
+
+    def istgah(self):
+        self.panel2 = Istgah()
+        self.panel2.show()
+        self.close()
+
+
+
+    def pelikan(self):
+        self.panel2 = Pelikan()
+        self.panel2.show()
+        self.close()
+
+
+
+
+    def sixteen(self):
+        self.panel2 = sixteen()
+        self.panel2.show()
+        self.close()
+
+
+
+    def namimiram(self):
+        self.panel2 = NaMimiram()
+        self.panel2.show()
+        self.close()
+
+
+
+    def asayeshgah(self):
+        self.panel2 = Asayeshgah()
+        self.panel2.show()
+        self.close()
+
+
+
+    def dashte(self):
+        self.panel2 = Dashte()
+        self.panel2.show()
+        self.close()
+
+
+
+    def cut(self):
+        self.panel2 = Cut()
+        self.panel2.show()
+        self.close()
+
+
+
+
 
 
 
@@ -2675,11 +3670,21 @@ class Main_Sign_up(QMainWindow):
     
         if password == con_pass:
             my_cursor.execute('INSERT INTO info (username, password) VALUES (\'%s\', \'%s\');' %(username, password))
-        
-        
-        my_db.commit()     
+            self.login()
+            my_db.commit()   
 
-        self.login()
+
+        else:
+            msg = QMessageBox.information(
+                self,
+                'Error',
+                "Password dosn't match confirmation !",
+                QMessageBox.Ok
+            )
+        
+          
+
+        
 
 
 
@@ -2882,17 +3887,27 @@ class Main_Login(QMainWindow):
         user = self.ui.lineEdit_username.text()
         password = self.ui.lineEdit_password.text()
 
+        my_cursor.execute('select * from info where password = %s ;' % self.ui.lineEdit_password.text())
+        myresult = my_cursor.fetchall()
 
-        if user == 'aa' and password == '11':
+        print(myresult[0][0], myresult[0][1])
+        print(user, password)
+
+        if (user == myresult[0][0] and str(password) == str(myresult[0][1])) :
             
             self.paneluser = Artists_names()
             self.paneluser.show()
             self.close()
 
-        else :
-# ye massagebox bezar bara in o sign up eshtebah
-            print('error')
-            
+        else:
+
+            msg = QMessageBox.information(
+                self,
+                'Error',
+                'Username or password is wrong !',
+                QMessageBox.Ok
+            )
+
 
 
 if __name__ == '__main__':

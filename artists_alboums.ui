@@ -29,7 +29,7 @@
          <x>10</x>
          <y>0</y>
          <width>451</width>
-         <height>641</height>
+         <height>581</height>
         </rect>
        </property>
        <property name="cursor">
@@ -318,40 +318,6 @@ QPushButton:hover{
         </property>
         <property name="text">
          <string/>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_single">
-        <property name="geometry">
-         <rect>
-          <x>109</x>
-          <y>530</y>
-          <width>241</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Dosis</family>
-          <pointsize>18</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{
-  background-color :#f05053;
-  color:#ffd452;
-}
-QPushButton:hover{
-  background-color :#ffd452;
-  color:#f05053;
-}</string>
-        </property>
-        <property name="text">
-         <string>Single-tracks</string>
         </property>
        </widget>
       </widget>

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>586</width>
-    <height>635</height>
+    <height>707</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -183,7 +183,7 @@ QPushButton:hover{
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>400</y>
+         <y>520</y>
          <width>191</width>
          <height>41</height>
         </rect>
@@ -220,43 +220,6 @@ QPushButton:hover{
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>340</y>
-         <width>191</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Dosis</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton{
-  background-color :#ffd452;
-  color:#f05053;
-}
-QPushButton:hover{
-  background-color :#f05053;
-  color:#ffd452;
-}</string>
-       </property>
-       <property name="text">
-        <string>Bad-pichid</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButtoon_laghzesh">
-       <property name="enabled">
-        <bool>true</bool>
-       </property>
-       <property name="geometry">
-        <rect>
-         <x>70</x>
          <y>460</y>
          <width>191</width>
          <height>41</height>
@@ -284,7 +247,7 @@ QPushButton:hover{
 }</string>
        </property>
        <property name="text">
-        <string>Laghzesh</string>
+        <string>Bad-pichid</string>
        </property>
       </widget>
       <widget class="QLabel" name="label">
@@ -399,7 +362,7 @@ border-radius:4px;
        <property name="geometry">
         <rect>
          <x>280</x>
-         <y>460</y>
+         <y>520</y>
          <width>191</width>
          <height>41</height>
         </rect>
@@ -436,7 +399,7 @@ QPushButton:hover{
        <property name="geometry">
         <rect>
          <x>280</x>
-         <y>340</y>
+         <y>400</y>
          <width>191</width>
          <height>41</height>
         </rect>
@@ -473,7 +436,7 @@ QPushButton:hover{
        <property name="geometry">
         <rect>
          <x>280</x>
-         <y>400</y>
+         <y>460</y>
          <width>191</width>
          <height>41</height>
         </rect>
@@ -651,14 +614,14 @@ QPushButton:hover{
         <string>Na-mimiram ...</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButtoon_daroon">
+      <widget class="QPushButton" name="pushButtoon_laghzeshh">
        <property name="enabled">
         <bool>true</bool>
        </property>
        <property name="geometry">
         <rect>
          <x>70</x>
-         <y>520</y>
+         <y>580</y>
          <width>401</width>
          <height>41</height>
         </rect>
@@ -685,7 +648,118 @@ QPushButton:hover{
 }</string>
        </property>
        <property name="text">
-        <string>Daroon[skit]</string>
+        <string>Laghzesh</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_birahe">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>340</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Birahe</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_raghs">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>401</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>Raghs</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_sixteen">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>340</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Dosis</family>
+         <pointsize>18</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  background-color :#ffd452;
+  color:#f05053;
+}
+QPushButton:hover{
+  background-color :#f05053;
+  color:#ffd452;
+}</string>
+       </property>
+       <property name="text">
+        <string>16.6 %</string>
        </property>
       </widget>
      </widget>
