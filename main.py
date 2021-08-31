@@ -19,6 +19,17 @@ from Zendegi           import Ui_Zendegi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 my_db = connect(user = 'root',
                 password = '43694369',
                 host = '127.0.0.1',
@@ -3890,8 +3901,6 @@ class Main_Login(QMainWindow):
         my_cursor.execute('select * from info where password = %s ;' % self.ui.lineEdit_password.text())
         myresult = my_cursor.fetchall()
 
-        print(myresult[0][0], myresult[0][1])
-        print(user, password)
 
         if (user == myresult[0][0] and str(password) == str(myresult[0][1])) :
             
