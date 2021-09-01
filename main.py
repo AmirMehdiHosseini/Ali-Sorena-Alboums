@@ -31,7 +31,7 @@ from Zendegi           import Ui_Zendegi
 
 
 my_db = connect(user = 'root',
-                password = '43694369',
+                password = '',          #use your own db and password ...
                 host = '127.0.0.1',
                 database = 'account')
 
